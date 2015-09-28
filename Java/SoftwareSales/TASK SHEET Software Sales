@@ -1,0 +1,57 @@
+TASK SHEET Software Sales Brennan McFarland 9/ /13
+
+Purpose: Write a program that will determine balance due for a given
+number of software units sold
+Input: byte numSold
+Output: byte numSold, double pPrice, double balanceDue
+Processing: balanceDue = numSold * pPrice
+Special Concerns: Declare constant PRICE = 99
+
+Pseudocode:
+declare variables + construct classes
+Display "How many software units would you like to purchase: "
+input response into numSold
+if numSold >= 100, pPrice = PRICE*.5
+else if numSold >= 50, pPrice = PRICE*.6
+else if numSold >= 20, pPrice = PRICE*.7
+else if numSold >= 10, pPrice = PRICE*.8
+else pPrice = PRICE
+balanceDue = numSold * pPrice
+Display "Units ordered: " + return of getUnitsSold()
+Display "Cost per unit: " + return of calcPurchasePrice()
+Display "Balance due: " + return of balanceDue()
+
+Flow Chart:
+
+
+
+
+
+
+Screen Drawing:
+
+How many software units would you like to purchase: xx
+
+Units ordered: xx
+Cost per unit: xx.xx
+Balance due: xx.xx
+
+UML
+SoftwareSales
+
+-numSold : short
+
++SoftwareSales()
++SoftwareSales(quantity : byte, price : double, balance : double)
++setUnitsSold(quantity : byte) : void
++getUnitsSold() : byte
++balanceDue() : double
++calcPurchasePrice() : double
+
+Actual Output:
+
+How many software units would you like to purchase: 34
+
+Units ordered: 34
+Cost per unit: $69.30
+Balance due: $2356.20

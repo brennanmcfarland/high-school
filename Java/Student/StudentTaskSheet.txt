@@ -1,0 +1,72 @@
+Brennan McFarland
+9/13/13
+ TASK SHEET TestScoresDemo
+  
+  Purpose: ask a student to enter 3 test scores and average them with classes
+  Input: bytes sc1, sc2, sc3, response
+  Output: bytes sc1, sc2, sc3
+  Processing: student.getAverage return = (sc1 + sc2 + sc3)/3.0
+  Pseudocode:
+  declare variables
+  construct classes
+  display "Enter test score 1: "
+  input response into sc1
+  display "Enter test score 2: "
+  input response into sc2
+  display "Enter test score 3: "
+  input response into sc3
+  return (sc1 + sc2 + sc3)/3.0
+  display "Score 1: " + sc1
+  display "Score 2: " + sc2
+  display "Score 3: " + sc3
+  display "Average Score: " + return of getAvg()
+    
+  Flow Chart:
+  
+  
+  
+  
+  
+  
+  
+  Screen Drawing:
+Enter test score 1: xx
+Enter test score 2: xx
+Enter test score 3: xx
+
+Score 1: xx
+Score 2: xx
+Score 3: xx
+Average Score: x.x
+  
+  UML
+Student
+
+-sc1 : byte
+-sc2 : byte
+-sc3 : byte
+
++Student()
++Student(scoreOne1 : byte, scoreTwo : byte, scoreThree : byte)
++setScore1(scoreOne : byte) : void
++setScore2(scoreTwo : byte) : void
++setScore3(scoreThree : byte) : void
++getScore1() : byte
++getScore2() : byte
++getScore3() : byte
++getAverage() : double
+  
+Special Concerns: to avoid integer division, divide by 3.0
+  
+
+Actual Output:
+  
+Computer-Classroom-09:Student 2015538$ java StudentDemo
+Enter test score 1: 89
+Enter test score 2: 76
+Enter test score 3: 98
+
+Score 1: 89
+Score 2: 76
+Score 3: 98
+Average Score: 87.66666666666667

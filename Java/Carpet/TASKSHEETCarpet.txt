@@ -1,0 +1,75 @@
+TASK SHEET Carpet
+
+Purpose of Program: Ask the user for the dimensions of a room and the price per square foot of the desired carpeting to calculate and display the total cost of the carpet.
+Input: double length, width, price
+Output: float totalCost
+Processing: return from RoomCarpet price*return of getArea() in class RoomDimension
+
+Screen Drawing:
+Enter room length:
+xx
+Enter room width:
+xx
+Enter carpet price per square foot:
+xx.xx
+Total cost to carpet the room: xx.xx
+
+Pseudocode:
+	display "Enter room length: "
+	input response into length
+	pass length into setLength in class RoomDimension
+	display "Enter room width: "
+	input response into width
+	pass width into setWidth in class RoomDimension
+	display "Enter carpet price per square foot: "
+	input response into price
+	pass price into setPrice in class RoomCarpet in constructor
+	display "Total cost to carpet the room: " + return of getTotalCost in class RoomCarpet 			   (which gets the return of getArea in class RoomDimension)
+	
+Flow Chart:
+
+
+
+
+
+
+
+
+
+
+UML:
+
+			RoomCarpet
+		-price : double
+		-dim : RoomDimension
+		
+		+RoomCarpet(d : RoomDimension, cost : double)
+		+RoomCarpet()
+		+getTotalCost() : double
+		+getPrice() : double
+		+setPrice(p : double) : void
+		+equals() : bool
+		+toString() : String
+		
+			RoomDimension
+		-roomLength : double
+		-roomWidth: double
+		
+		+RoomDimension(object2: RoomDimension)
+		+RoomDimension()
+		+setLength(len : double) : void
+		+setWidth(wid : double) : void
+		+getArea() : double
+		+equals() : bool
+		+toString() : String
+		
+		
+Actual Output:
+
+Enter room length: 
+10
+Enter room width: 
+20
+Enter carpet price per square foot: 
+1.50
+Total cost to carpet the room: $300.00
